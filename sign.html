@@ -25,21 +25,24 @@ body{
   99.5%{text-shadow: 0px 0px var(--glowsize) var(--glowcol), 0px 0px 6px var(--glowcol); color:var(--txtcol);}
   100%{text-shadow: none; color:var(--txtcoldark);}
 }
-
 #title{
   text-align:center;
   position:relative;
-  color:var(--txtcoldark);
+  color:var(--txtcol);
   font-size:var(--fontsize);
   z-index:-1;
+  text-transform: uppercase;
+  text-shadow: 0px 0px var(--glowsize) var(--glowcol), 0px 0px 6px var(--glowcol);  
+}
+#title .shit {
+  color:var(--txtcoldark);
   animation-name: flicker;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-  text-transform: uppercase;
 }
     </style>
 </head>
 <body>
-    <h1 id="title">Follow me</h1>
+    <h1 id="title">Don't miss next episode <span style="position: relative; top: -8px;">-</span> <span class="shit">Follow me</span></h1>
 </body>
 </html>
