@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+body{
+  font-family: 'Comfortaa', cursive;
+  background-color: transparent;
+  --glowcol:rgba(255, 0, 150, 1);
+  --txtcol:rgba(255, 180, 245, 1);
+  --txtcoldark:rgba(100, 100, 100, 1);
+  --flycol:rgba(30, 30, 30, 0.6);
+  --glowsize:50px;
+  --fontsize:60pt;
+}
+@keyframes flicker{
+  0%{text-shadow: 0px 0px var(--glowsize) var(--glowcol), 0px 0px 6px var(--glowcol); color:var(--txtcol);}
+  80%{text-shadow: 0px 0px var(--glowsize) var(--glowcol), 0px 0px 6px var(--glowcol); color:var(--txtcol);}
+  90%{text-shadow: none; color:var(--txtcoldark);}
+  95%{text-shadow: 0px 0px var(--glowsize) var(--glowcol), 0px 0px 6px var(--glowcol); color:var(--txtcol);}
+  100%{text-shadow: none; color:var(--txtcoldark);}
+}
+
+#title{
+  text-align:center;
+  position:relative;
+  color:var(--txtcoldark);
+  font-size:var(--fontsize);
+  z-index:-1;
+  animation-name: flicker;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <h1 id="title">Follow me</h1>
+</body>
+</html>
