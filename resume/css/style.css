@@ -84,7 +84,7 @@ header .menu .link {
     color: #fff;
     text-decoration: none;
     white-space: nowrap;
-    transition: ease .2s color;
+    transition: ease .2s all;
 }
 header .menu .link:hover {
     text-shadow: 2px 2px 0px #c88f22;
