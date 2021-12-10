@@ -87,7 +87,7 @@ header .menu .link {
     transition: ease .2s color;
 }
 header .menu .link:hover {
-    color: var(--main-color);
+    text-shadow: 2px 2px 0px #c88f22;
 }
 .hero {
     position: relative;
